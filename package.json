@@ -22,9 +22,7 @@
     "nodemon": "^2.0.13"
   },
   "dependencies": {
-    "@pinata/sdk": "^1.1.23",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "surge": "^0.23.0"
+    "express": "^4.17.1"
   }
 }

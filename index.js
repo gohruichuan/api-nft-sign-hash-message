@@ -5,11 +5,11 @@ var express = require('express'),
 bodyParser = require('body-parser');
 
 
-const metadata = require('./metadata'); 
+const signature = require('./signature'); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api', metadata);
+app.use('/get', signature);
   // .post(todoList.create_a_task);
 
 

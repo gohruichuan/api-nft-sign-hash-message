@@ -1,22 +1,5 @@
 const express = require('express');
 const router = new express.Router();
-// const ipfsAPI = require('ipfs-http-client');
-const pinataSDK = require('@pinata/sdk');
-const pinata = pinataSDK('b85b436c975bbfb35a3a', process.env.PINATA_SECRET_KEY);
-const pinataUrl = "https://gateway.pinata.cloud/ipfs/";
-const metadataFilter = {
-  name: ""
-}
-
-const pinataFilter = {
-  status: 'pinned'
-}
-
-
-const getPinataData = async (metaDataId) => {
-
-}
-
 
 router.get('/metadata/:id', (req, res, next) => {
   var metaDataId = req.params['id'];
