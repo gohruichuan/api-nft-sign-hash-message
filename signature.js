@@ -9,9 +9,9 @@ router.post('/signature', async (req, res, next) => {
 
   console.log("account ", account);
   console.log("amount ", amount);
-
-  const PRIVATE_KEY = "0x7e1621d6ca2f502bfda7e8b6983a1eadfdb7a270e36be2c050489a5019b0860a"
-  const signer_address = "0x49de30dC31D33D7da03d71b75132ef82251B1D2f";
+  
+  const PRIVATE_KEY = process.env.PRIVATE_KEY;
+  const signer_address = process.env.SIGNER_ADDRESS;
   const nonce = crypto.randomBytes(9).toString("base64")
   const content = web3.utils.soliditySha3({
     type: "address",
